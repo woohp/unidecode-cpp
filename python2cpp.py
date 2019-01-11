@@ -72,7 +72,7 @@ def main():
         buckets.append((bucket_name, data))
 
     template = Template(template_)
-    with open('unidecode.hpp', 'w') as f:
+    with open('include/unidecode.hpp', 'w') as f:
         print(template.render(buckets=buckets), file=f)
 
 
