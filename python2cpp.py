@@ -18,7 +18,7 @@ template_ = '''
 #include <string>
 #include <string_view>
 
-inline std::string unidecode(const std::u32string& input)
+inline std::string unidecode(const std::u32string_view input)
 {
     using namespace std;
 
@@ -59,7 +59,7 @@ inline std::string unidecode(const std::u32string& input)
 
 
 def main():
-    files = sorted(glob.glob('unidecode/unidecode/x*.py'))
+    files = sorted(glob.glob('third_party/unidecode/unidecode/x*.py'))
     buckets = []
 
     for filename in files:

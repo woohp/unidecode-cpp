@@ -47,7 +47,7 @@ class BuildExt(build_ext):
         if compiler_type == 'unix':
             opts.extend([
                 '-DVERSION_INFO="{}"'.format(self.distribution.get_version()),
-                '-std=c++14',
+                '-std=c++1z',
             ])
 
         for ext in self.extensions:

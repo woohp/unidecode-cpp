@@ -1,3 +1,3 @@
-[submodule "unidecode"]
-	path = unidecode
-	url = https://github.com/iki/unidecode
+[submodule "third_party/unidecode"]
+	path = third_party/unidecode
+	url = https://github.com/avian2/unidecode
