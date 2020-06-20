@@ -42,7 +42,7 @@ class BuildExt(build_ext):
 
         opts = ['-O2', '-march=native']
         if sys.platform == 'darwin':
-            opts += ['-stdlib=libc++', '-mmacosx-version-min=10.8']
+            opts += ['-stdlib=libc++', '-mmacosx-version-min=10.14']
 
         if compiler_type == 'unix':
             opts.extend([
@@ -59,9 +59,9 @@ class BuildExt(build_ext):
 setup(
     name='unidecode-fast',
     description='Fast Unidecode',
-    version='0.1.0',
-    setup_requires=['pybind11>=2.2.4'],
-    install_requires=['pybind11>=2.2.4'],
+    version='0.2.0',
+    setup_requires=['pybind11>=2.5.0'],
+    install_requires=['pybind11>=2.5.0'],
     ext_modules=ext_modules,
     cmdclass={'build_ext': BuildExt},
     test_suite='tests',

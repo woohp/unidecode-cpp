@@ -18,7 +18,7 @@ template_ = '''
 #include <string>
 #include <string_view>
 
-inline std::string unidecode(const std::u32string_view input)
+inline std::string unidecode(const std::u32string_view& input)
 {
     using namespace std;
 
